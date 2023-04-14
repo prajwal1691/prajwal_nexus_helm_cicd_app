@@ -10,7 +10,7 @@ pipeline{
       steps{
         script{
           withSonarQubeEnv(credentialsId: 'sonar-token') {
-            sh 'sudo mvn clean package sonar:sonar'
+           sh 'sudo mvn clean package sonar:sonar'
           }
         }
       }
