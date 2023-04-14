@@ -4,7 +4,7 @@ pipeline{
     stage('sonar quality status'){
       agent{
         docker{
-          image 'jenkins/jenkins'
+          image 'jenkins/jenkins:2.60.3-alpine'
         }
       }
       steps{
