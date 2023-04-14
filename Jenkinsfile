@@ -4,7 +4,7 @@ pipeline{
     stage('sonar quality status'){
       agent{
         docker{
-          image 'prajwal1691/jenkins-maven:jenkins-maven-v1'
+          image 'prajwal1691/jenkins-maven:jenkins-maven-v4'
         }
       }
       steps{
